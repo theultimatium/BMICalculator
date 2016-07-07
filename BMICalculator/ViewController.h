@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *weightTextField;
+@property (weak, nonatomic) IBOutlet UITextField *heightTextField;
+@property (weak, nonatomic) IBOutlet UITextField *bmiTextField;
+
+- (IBAction)calculateButtonPressed:(id)sender;
 
 
 @end
