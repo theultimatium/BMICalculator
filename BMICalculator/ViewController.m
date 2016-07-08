@@ -32,7 +32,7 @@
     
     NSLog(@"height: %f weight: %f", height, weight);
     
-    float bmi = weight / (height * height);
+    float bmi = weight / (height/100 * height/100);
     NSLog(@"Bmi: %f", bmi);
     
     NSString* bmiText = [NSString stringWithFormat:@"%f", bmi];
